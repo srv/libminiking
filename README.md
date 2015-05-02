@@ -90,13 +90,13 @@ After that, the sonar configuration can be modified according to your needs. Mak
  
  To restart the device, call to the following method:
  
-    `sn.reboot();`
+    sn.reboot();
     
 After this operation, the parameters are reset to the default ones. It is not needed to call to `updateConfig` in this case.
 
 In order to get data from the sonar, use the `getScanLine` method. Here is an example for this:
 
-    ```cpp
+    ``` cpp
     BYTE *data = sn.getScanLine();
  
     printf("SCAN POSITION IN DEGREES: %.2f\n", sn.getPosition());
