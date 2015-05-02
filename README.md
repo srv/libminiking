@@ -73,20 +73,20 @@ By default, the sonar is configured with the following parameters:
 
 First of all, you need to instantiate a MiniKing object at `/dev/ttyS0`, using timeout = 0:
 
-    `MiniKing mk("/dev/ttyS0", 0);`
+    MiniKing mk("/dev/ttyS0", 0);
 
 Next, it is necessary to call the `initSonar` method to initialize the communication between the sonar and the computer:
 
-    `sn.initSonar();`
+    sn.initSonar();
     
 After that, the sonar configuration can be modified according to your needs. Make all changes that you want and, then, resend the configuration to the sonar using the `updateConfig` method. Example:
 
-    `sn.setRange(25);`
-    `sn.setBins(200);`
-    `sn.setContinuous(false);`
-    `sn.setLeftLim(90);`
-    `sn.setRightLim(180);`
-    `sn.updateConfig();`
+    sn.setRange(25);
+    sn.setBins(200);
+    sn.setContinuous(false);
+    sn.setLeftLim(90);
+    sn.setRightLim(180);
+    sn.updateConfig();
  
  To restart the device, call to the following method:
  
@@ -96,13 +96,11 @@ After this operation, the parameters are reset to the default ones. It is not ne
 
 In order to get data from the sonar, use the `getScanLine` method. Here is an example for this:
 
-    ``` cpp
     BYTE *data = sn.getScanLine();
  
     printf("SCAN POSITION IN DEGREES: %.2f\n", sn.getPosition());
     for (int i = 0; i < sn.getDataLength(); i++)
         printf("%d ", data[i]);* 
-    ```
 
 ## Contact
 
