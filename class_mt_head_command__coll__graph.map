@@ -1,0 +1,6 @@
+<map id="MtHeadCommand" name="MtHeadCommand">
+<area shape="rect" id="node2" href="$class_command.html" title="Command" alt="" coords="5,83,87,109"/>
+<area shape="rect" id="node3" href="$class_packet.html" title="Packet" alt="" coords="15,5,77,32"/>
+<area shape="rect" id="node4" href="$struct_config.html" title="Config" alt="" coords="113,83,172,109"/>
+<area shape="rect" id="node5" href="$struct_head_parameter_info.html" title="HeadParameterInfo" alt="" coords="197,83,331,109"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="MtBBUserData" name="MtBBUserData">
+<area shape="rect" id="node2" href="$class_message.html" title="Message" alt="" coords="5,83,79,109"/>
+<area shape="rect" id="node3" href="$class_packet.html" title="Packet" alt="" coords="11,5,73,32"/>
+<area shape="rect" id="node4" href="$struct_baud_b_b_block.html" title="BaudBBBlock" alt="" coords="105,83,207,109"/>
+<area shape="rect" id="node5" href="$struct_sonar_block.html" title="SonarBlock" alt="" coords="231,83,320,109"/>
+<area shape="rect" id="node6" href="$struct_system_b_b_block.html" title="SystemBBBlock" alt="" coords="345,83,463,109"/>
+</map>

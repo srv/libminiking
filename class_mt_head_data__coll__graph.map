@@ -1,0 +1,5 @@
+<map id="MtHeadData" name="MtHeadData">
+<area shape="rect" id="node2" href="$class_message.html" title="Message" alt="" coords="5,83,79,109"/>
+<area shape="rect" id="node3" href="$class_packet.html" title="Packet" alt="" coords="11,5,73,32"/>
+<area shape="rect" id="node4" href="$struct_device_pars.html" title="DevicePars" alt="" coords="104,83,195,109"/>
+</map>

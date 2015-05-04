@@ -1,0 +1,7 @@
+<map id="Message" name="Message">
+<area shape="rect" id="node3" href="$class_mt_alive.html" title="MtAlive" alt="" coords="5,155,72,181"/>
+<area shape="rect" id="node4" href="$class_mt_b_b_user_data.html" title="MtBBUserData" alt="" coords="97,155,207,181"/>
+<area shape="rect" id="node5" href="$class_mt_head_data.html" title="MtHeadData" alt="" coords="232,155,328,181"/>
+<area shape="rect" id="node6" href="$class_mt_version_data.html" title="MtVersionData" alt="" coords="352,155,461,181"/>
+<area shape="rect" id="node2" href="$class_packet.html" title="Packet" alt="" coords="185,5,247,32"/>
+</map>
