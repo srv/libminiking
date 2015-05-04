@@ -21,7 +21,7 @@ include_directories(include ${Boost_INCLUDE_DIRS})
 add_custom_target(dtarget_visual_indexing SOURCES ${HDRS} ${SRCS} ${LNCH})
 
 # BinaryIndex library
-add_library(minikinglib
+add_library(libminiking
     src/SerialPort.cpp
     src/Packet.cpp
     src/Message.cpp
@@ -38,4 +38,4 @@ add_library(minikinglib
     src/MiniKing.cpp
 )
 
-target_link_libraries(minikinglib ${Boost_LIBRARIES})
+target_link_libraries(libminiking ${Boost_LIBRARIES})
