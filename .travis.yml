@@ -15,7 +15,7 @@ before_install:
   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
 
 install:
-  - sudo apt-get install --yes g++ clang libboost-all-dev
+  - sudo apt-get install --yes g++ clang libboost-all-dev cmake
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
   - mkdir -p build
   - cd build
