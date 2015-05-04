@@ -19,7 +19,7 @@ install:
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
   - mkdir -p build
   - cd build
-  - ccmake ..
+  - cmake ..
   - make
 after_success:
 - openssl aes-256-cbc
