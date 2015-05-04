@@ -7,19 +7,8 @@ file(GLOB_RECURSE HDRS ${CMAKE_CURRENT_SOURCE_DIR} *.h *.hpp)
 file(GLOB_RECURSE SRCS ${CMAKE_CURRENT_SOURCE_DIR} *.cxx *.cpp *.c *.py)
 file(GLOB_RECURSE LNCH ${CMAKE_CURRENT_SOURCE_DIR} *.launch, *.yml)
 
-# Catkin dependencies
-find_package(catkin REQUIRED COMPONENTS roscpp)
-
 # System dependencies
 find_package(Boost REQUIRED COMPONENTS system)
-
-# Defining the package
-catkin_package(
-    INCLUDE_DIRS include
-    LIBRARIES minikinglib
-    CATKIN_DEPENDS roscpp
-    DEPENDS Boost
-)
 
 ###########
 ## Build ##
@@ -48,4 +37,5 @@ add_library(minikinglib
     src/MtSendVersion.cpp
     src/MiniKing.cpp
 )
+
 target_link_libraries(minikinglib ${Boost_LIBRARIES})

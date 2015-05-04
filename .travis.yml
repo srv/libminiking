@@ -10,40 +10,26 @@ notifications:
     on_success: change #[always|never|change] # default: change
     on_failure: change #[always|never|change] # default: always
 before_install:
-  - export ROS_DISTRO=indigo
-  - export CI_SOURCE_PATH=$(pwd)
-  - export REPOSITORY_NAME=${PWD##*/}
-  - echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
-  - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
-  - wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin ros-$ROS_DISTRO-ros
-  - sudo rosdep init
-  - rosdep update
-  - openssl aes-256-cbc
-    -K $encrypted_dc9ab2986818_key
-    -iv $encrypted_dc9ab2986818_iv
-    -in  config/travisci_rsa.enc
-    -out config/travisci_rsa
-    -d
-  - chmod 0600 config/travisci_rsa
-  - cp config/travisci_rsa ~/.ssh/id_rsa 
+  - sudo apt-add-repository --yes ppa:boost-latest/ppa
+  - sudo apt-get update
+  - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
+
 install:
-  # Create workspace
-  - mkdir -p ~/ros/src
-  - cd ~/ros/src
-  - wstool init .
-  - git clone -b master https://github.com/srv/miniking.git
-  - rm -rf $REPOSITORY_NAME
-  - ln -s $CI_SOURCE_PATH . # Link the repo we are testing to the new workspace
-  - cd ../
-  # Install dependencies for source repos
-  - rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y
-before_script: # Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
-  - source /opt/ros/$ROS_DISTRO/setup.bash  
+  - sudo apt-get install --yes g++ clang libboost-all-dev
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
-  - catkin_make -j2
+  - mkdir -p build
+  - cd build
+  - ccmake ..
+  - make
 after_success:
+- openssl aes-256-cbc
+  -K $encrypted_dc9ab2986818_key
+  -iv $encrypted_dc9ab2986818_iv
+  -in  config/travisci_rsa.enc
+  -out config/travisci_rsa
+  -d
+- chmod 0600 config/travisci_rsa
+- cp config/travisci_rsa ~/.ssh/id_rsa
 - sudo apt-get install doxygen graphviz
 - openssl aes-256-cbc
   -K  $encrypted_dc9ab2986818_key

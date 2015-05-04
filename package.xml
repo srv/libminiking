@@ -9,7 +9,4 @@
 	<url type="website">http://wiki.ros.org/miniking</url>
 
 	<buildtool_depend>catkin</buildtool_depend>
-
-	<build_depend>roscpp</build_depend>
-	<run_depend>roscpp</run_depend>
 </package>
