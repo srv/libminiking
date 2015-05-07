@@ -4,7 +4,7 @@ This package contains a C++ class for programming the MiniKing sonar, from Trite
 
 This library was implemented during the development of my Master's Thesis and it can be considered as research code. The authors are not responsible for any errors it may contain. Use it at your own risk!
 
-[![Build Status](https://travis-ci.org/srv/miniking.svg?branch=master)](https://travis-ci.org/srv/miniking)
+[![Build Status](https://travis-ci.org/srv/libminiking.svg?branch=master)](https://travis-ci.org/srv/libminiking)
 
 
 ## Related publication

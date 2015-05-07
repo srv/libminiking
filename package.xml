@@ -1,5 +1,5 @@
 <package>
-	<name>miniking</name>
+	<name>libminiking</name>
 	<version>0.1.0</version>
 	<description>This package implements a library to interact with the MiniKing Sonar, from Tritech.</description>
 
