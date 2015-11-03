@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "SerialPort.h"
+#include "libminiking/SerialPort.h"
 
 // Constructor
 

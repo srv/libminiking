@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "MtReboot.h"
+#include "libminiking/MtReboot.h"
 
 // Constructor
 

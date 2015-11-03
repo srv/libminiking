@@ -10,7 +10,7 @@
 #ifndef _MTHEADCOMMAND_H
 #define _MTHEADCOMMAND_H
 
-#include "Command.h"
+#include "libminiking/Command.h"
 
 // This structure stores all parameter information
 

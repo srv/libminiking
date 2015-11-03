@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "Packet.h"
+#include "libminiking/Packet.h"
 
 BYTE Packet::getHdr(void) { return hdr; }
 

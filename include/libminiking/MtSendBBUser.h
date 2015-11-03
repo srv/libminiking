@@ -10,7 +10,7 @@
 #ifndef _MTSENDBBUSER_H
 #define _MTSENDBBUSER_H
 
-#include "Command.h"
+#include "libminiking/Command.h"
 
 class MtSendBBUser : public Command {
 

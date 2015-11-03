@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "MiniKing.h"
+#include "libminiking/MiniKing.h"
 
 MiniKing::MiniKing(char *port, int timeout) :
     cp(port, br115200, db8, None, sb1, timeout, false),

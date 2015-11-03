@@ -1,21 +1,21 @@
 /*
 =============================================================================
-  Name: MtReboot.h
+  Name: MtSendData.h
   Author: Emilio Garcia-Fidalgo
-  Date: 11/10/06 17:50
-  Description: Implementation of 'mtReboot' command
+  Date: 11/10/06 18:23
+  Description: Implementation of 'mtSendData' command
 =============================================================================
 */
 
-#ifndef _MTREBOOT_H
-#define _MTREBOOT_H
+#ifndef _MTSENDDATA_H
+#define _MTSENDDATA_H
 
-#include "Command.h"
+#include "libminiking/Command.h"
 
-class MtReboot : public Command {
+class MtSendData : public Command {
 
 public:
-    MtReboot();
+    MtSendData();
     void printPacket(bool);
     void send(SerialPort *);
 };

@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "MtSendData.h"
+#include "libminiking/MtSendData.h"
 #include <ctime>
 
 // Constructor

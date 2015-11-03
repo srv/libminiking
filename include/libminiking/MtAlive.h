@@ -10,7 +10,7 @@
 #ifndef _MTALIVE_H
 #define _MTALIVE_H
 
-#include "Message.h"
+#include "libminiking/Message.h"
 
 class MtAlive : public Message {
 

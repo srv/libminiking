@@ -10,7 +10,7 @@
 #ifndef _MTBBUSERDATA_H
 #define _MTBBUSERDATA_H
 
-#include "Message.h"
+#include "libminiking/Message.h"
 
 class MtBBUserData : public Message {
 

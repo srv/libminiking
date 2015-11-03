@@ -10,7 +10,7 @@
 #ifndef _MTVERSIONDATA_H
 #define _MTVERSIONDATA_H
 
-#include "Message.h"
+#include "libminiking/Message.h"
 
 // CPUID fields
 

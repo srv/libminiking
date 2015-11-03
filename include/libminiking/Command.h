@@ -10,8 +10,8 @@
 #ifndef _COMMAND_H
 #define _COMMAND_H
 
-#include "Packet.h"
-#include "SerialPort.h"
+#include "libminiking/Packet.h"
+#include "libminiking/SerialPort.h"
 
 class Command : public Packet {
 

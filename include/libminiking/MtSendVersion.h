@@ -10,7 +10,7 @@
 #ifndef _MTSENDVERSION_H
 #define _MTSENDVERSION_H
 
-#include "Command.h"
+#include "libminiking/Command.h"
 
 class MtSendVersion : public Command {
 

@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "SonarDefs.h"
+#include "libminiking/SonarDefs.h"
 #include <stdexcept>
 #include <iostream>
 #include <iomanip>

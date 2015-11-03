@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "MtSendBBUser.h"
+#include "libminiking/MtSendBBUser.h"
 
 // Constructor
 

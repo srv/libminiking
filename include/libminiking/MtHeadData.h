@@ -12,7 +12,7 @@
 
 // Device Params
 
-#include "Message.h"
+#include "libminiking/Message.h"
 
 typedef struct {       
 

@@ -10,14 +10,14 @@
 #ifndef _INCLUDEPACKETS_H
 #define _INCLUDEPACKETS_H
 
-#include "MtVersionData.h"
-#include "MtSendVersion.h"
-#include "MtSendData.h"
-#include "MtSendBBUser.h"
-#include "MtReboot.h"
-#include "MtHeadData.h"
-#include "MtHeadCommand.h"
-#include "MtBBUserData.h"
-#include "MtAlive.h"
+#include "libminiking/MtVersionData.h"
+#include "libminiking/MtSendVersion.h"
+#include "libminiking/MtSendData.h"
+#include "libminiking/MtSendBBUser.h"
+#include "libminiking/MtReboot.h"
+#include "libminiking/MtHeadData.h"
+#include "libminiking/MtHeadCommand.h"
+#include "libminiking/MtBBUserData.h"
+#include "libminiking/MtAlive.h"
 
 #endif

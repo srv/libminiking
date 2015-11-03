@@ -33,11 +33,11 @@ Default Configuration for Sonar:
 #ifndef _MINIKING_H
 #define _MINIKING_H
 
-#include "SonarDefs.h"
-#include "SerialPort.h"
-#include "IncludePackets.h"
-#include "Message.h"
-#include "Command.h"
+#include "libminiking/SonarDefs.h"
+#include "libminiking/SerialPort.h"
+#include "libminiking/IncludePackets.h"
+#include "libminiking/Message.h"
+#include "libminiking/Command.h"
 
 class MiniKing {
 

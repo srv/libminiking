@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "Message.h"
+#include "libminiking/Message.h"
 #include <cmath>
 
 // Pass an Hexadecimal to Integer

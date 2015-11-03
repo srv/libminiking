@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "Command.h"
+#include "libminiking/Command.h"
 
 // Pass 'number' to Hexadecimal and store it to 'r'
 void Command::base256(BYTE *r, int number, int howmany) {

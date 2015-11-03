@@ -24,7 +24,7 @@ catkin_package(
 include_directories(include ${Boost_INCLUDE_DIRS})
 
 # Custom target to include headers and launch files in QtCreator
-add_custom_target(dtarget_visual_indexing SOURCES ${HDRS} ${SRCS} ${LNCH})
+#add_custom_target(dtarget_visual_indexing SOURCES ${HDRS} ${SRCS} ${LNCH})
 
 # BinaryIndex library
 add_library(miniking

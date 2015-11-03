@@ -7,7 +7,7 @@
 =============================================================================
 */
 
-#include "MtHeadCommand.h"
+#include "libminiking/MtHeadCommand.h"
 #include <cmath>
 
 // Constructor
