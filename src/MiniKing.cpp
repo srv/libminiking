@@ -125,7 +125,7 @@ bool MiniKing::hasParams(void) { return mtalive.hasParams(); }
 
 int MiniKing::getHeadTime(void) { return mtalive.getHeadTime(); }
 
-float MiniKing::getMotorPos(void) { return (((mtalive.getMotorPos() / 16.0) * 9.0) / 10.0); } // In grads               
+float MiniKing::getMotorPos(void) { return (((mtalive.getMotorPos() / 16.0) * 9.0) / 10.0); } // In grads
 
 bool MiniKing::isCentering(void) { return mtalive.isCentering(); }
 
@@ -187,8 +187,8 @@ SonarBlock *MiniKing::otherInfo(void) { return &(mtbbuserdata.snb); }
 
 // 'MtHeadData' access functions
 
-float MiniKing::getPosition(void) { 
-    
+float MiniKing::getPosition(void) {
+
     if (needData)
         return ((((float)mtheaddata2.getBearing() / 16.0) * 9.0) / 10.0);      // In grads
     else
@@ -196,7 +196,7 @@ float MiniKing::getPosition(void) {
 }
 
 int MiniKing::getDataLength(void) {
-    
+
     if (needData)
         return mtheaddata2.getDataLength();
     else
